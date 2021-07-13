@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jtaua\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jtaua\\.nuget\\packages"
+    ]
+  }
+}
