@@ -44,11 +44,22 @@ namespace DIO.Series
 
         private static void ExcluirSerie()
 		{
-            //inserir confirmação: (Deseja mesmo excluir ?)
 			Console.Write("Digite o ID da série: ");
 			int indiceSerie = int.Parse(Console.ReadLine());
 
-			repositorio.Exclui(indiceSerie);
+			Console.WriteLine("Para excluir a série, digite (EXCLUIR)");
+			string confirma= Console.ReadLine();
+			Console.WriteLine();
+
+			if(confirma == "EXCLUIR")
+			{
+				repositorio.Exclui(indiceSerie);
+				Console.WriteLine("Série excluída.");
+			}
+			else
+			{
+				Console.WriteLine("A série não foi excluida.");
+			}
 		}
 
         private static void VisualizarSerie()
