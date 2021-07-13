@@ -16,7 +16,17 @@ namespace DIO.Series
             this.Genero = genero;
             this.Titulo = titulo;
             this.Descricao = descricao;
-            this.Ano = ano;
+
+            if(ano < 1946 || ano > DateTime.Now.Year)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Ano Inválido.");
+            }
+            else
+            {
+                this.Ano = ano;
+            }
+
             this.Excluido = false;
         }
 
